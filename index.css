@@ -1,0 +1,201 @@
+html {
+	padding: .5em;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #eee;
+	max-width: 900px;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+ul {
+	margin: 0 0 1.5em 0;
+	padding: 0 1.5em;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+a {
+	color: #2196F3;
+}
+
+h1, h2 {
+	font-family: "Helvetica Neue";
+	font-weight: 300;
+}
+
+h1 {
+	margin: .2em 0;
+	font-size: 2.488em;
+}
+
+h2 {
+	color: #666;
+	font-size: 1.44em;
+}
+
+h3 {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+section {
+	background: #fff;
+	padding: .3em 1em;
+	margin-bottom: .5em;
+}
+
+section > section {
+	border-bottom: 1px solid #ccc;
+	padding: 0;
+}
+
+section > section:last-child {
+	border-bottom: none;
+}
+
+.birth-date {
+	font-size: 0.833em;
+}
+
+.contact-details {
+	list-style: none;
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	vertical-align: bottom;
+}
+.contact-details li {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 1em;
+}
+.contact-details li {
+	vertical-align: baseline;
+}
+
+.contact-details li img {
+	position: relative;
+	margin: 2px .5em 0 0;
+}
+
+.contact__phone img {top: 5px;}
+.contact__mail img {top: 5px;}
+.contact__linkedin img {top: 2px;}
+.contact__github img {top: 5px;}
+
+.position__company {
+	font-size: 1.2em;
+	font-weight: 300;
+	display: block;
+	margin: 0;
+}
+.position__location:before {
+	content: '| '
+}
+.position__period {
+	display: inline-block;
+	color: #666;
+}
+
+.position__location {
+	display: inline-block;
+	color: #666;
+}
+
+.skill-list {
+	list-style: none;
+	margin: 0 0 1.5em 0;
+	padding: 0;
+}
+
+.skill-list li {
+	margin-bottom: .5em;
+}
+
+.skill__header {
+	display: inline-block;
+	padding: .2em 0;
+	font-style: italic;
+	color: #666;
+}
+
+.skill__more {
+	color: #999;
+	font-size: .8333em;
+}
+
+.keyword {
+	display: inline;
+}
+
+.keyword:after {
+	content: ' | ';
+	color: #ccc;
+}
+
+.keyword:last-child:after {
+	content: '';
+}
+
+@media print {
+	body {
+		font-size: 9pt !important;
+	}
+
+	section {
+		border-top: 1px solid #ccc;
+	}
+
+	section:first-child {
+		border: none;
+	}
+
+	section > section {
+		border: none;
+	}
+
+	.position {
+		page-break-inside: avoid;
+	}
+
+	@page {
+		margin: 4cm;
+	}
+
+	.contact-details li {
+		display: block;
+	}
+
+	.contact__linkedin a:after {
+		content: ': ' attr(href);
+	}
+	.contact__github a:after {
+		content: ': ' attr(href);
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 2.07em;
+	}
+
+	h2, h3 {
+		page-break-after: avoid;
+	}
+
+	.keyword {
+		display: block;
+	}
+
+	.keyword:after {
+		content: none;
+	}
+
+	.contact-details li {
+		display: block;
+	}
+}
