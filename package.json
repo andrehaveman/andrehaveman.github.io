@@ -1,0 +1,24 @@
+{
+  "name": "andrehaveman.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My personal website",
+  "main": "index.html",
+  "scripts": {
+    "build": "postcss --use autoprefixer --use cssnano -o index_built.css index.css",
+    "watch": "postcss --use autoprefixer --use cssnano --watch -o index_built.css index.css",
+    "watch:dev": "postcss --use autoprefixer --watch -o index_built.css index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrehaveman/andrehaveman.github.io.git"
+  },
+  "author": "André Haveman",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.6.2",
+    "postcss": "^5.0.21",
+    "postcss-cli": "^2.5.2"
+  }
+}
