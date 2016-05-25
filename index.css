@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: "Helvetica Neue", "Segoe UI", sans-serif;
+	font-family: "Helvetica Neue", "Segoe UI", "Roboto", sans-serif;
 	margin: 0;
 	padding: 0;
     font-size: 16px;
@@ -390,6 +390,9 @@ td:first-child {
 	
 	table, tbody, tr, td {
 		display: flex;
+        float: left;
+        clear: both;
+        width: 100%;
         flex-direction: column;
 	}
     
