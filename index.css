@@ -471,6 +471,10 @@ td:first-child {
         font-size: 9pt !important;
         text-align: left;
     }
+
+    @page {
+        margin: 20mm 15mm;
+    }
     
     h1, section, header, footer, div {
         padding: 0 !important;
