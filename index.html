@@ -1,200 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>André Haveman - Curriculum Vitae</title>
-	<link rel="stylesheet" href="index.css">
-</head>
-<body>
+<html lang="EN-en">
+    <head>
+        <title>André Haveman</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index_built.css">
+    </head>
 
-	<section>
-		<h1>André Haveman</h1>
-		<h2>Frontend Architect &amp; Developer</h2>
-		<p>Amersfoort, The Netherlands</p>
+    <body>
+        <header class="header">
+            <div class="header__content">
+                <h1><a href="/">André Haveman</a></h1>
+                <nav>
+                    <a href="/" class="active">Overview</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="projects.html">Projects</a>
+                </nav>
+            </div>
+        </header>
+        <section class="section" id="summary">
+            <div class="section__inner">
+                <div class="section__content">
+                    <h2>Front-end architect & developer</h2>
+                    <ul class="summary-list">
+                        <li>Specialized in <a href="#design">design</a> and <a href="#development">development</a> of complex web applications.</li>
+                        <li>15+ years of <a href="#experience">experience</a> in web industry</li>
+                        <li>Experienced JavaScript (ES2015) developer.</li>
+                        <li>Passionate about making enjoyable and usable products with high quality, well structured code.</li>
+                        <li>Enjoy working in agile, multidisciplinary teams and acting as a bridge between design and development</li>
+                        <li>Master Industrial Design Engineering, TU Delft</li>
+                    </ul>
+                    <ul class="contact-details">
+                        <li class="contact__phone"><i class="icon icon-phone"></i><a href="tel:+31624491395">+31 6 24491395</a></li>
+                        <li class="contact__email"><i class="icon icon-mail-alt"></i><a href="mailto:andre.haveman@gmail.com">andre.haveman@gmail.com</a></li>
+                        <li class="contact__linkedin"><i class="icon icon-linkedin"></i><a href="https://nl.linkedin.com/in/andrehaveman">LinkedIn</a></li>
+                        <li class="contact__github"><i class="icon icon-github"></i><a href="https://www.github.com/andrehaveman">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section section--featured project--dialogica">
+            <p class="section__type">Featured project</p>
+            <div class="section__inner">
+                <div class="section__images">
+                    <div class="section__image">
+                        <img src="assets/dialogica4.png" alt="" width="480">
+                    </div>
+                    <div class="section__image">
+                        <img src="assets/dialogica3.png" alt="" width="480">
+                    </div>
+                </div>
+                <div class="section__content">
+                    <h2>Dialogica <span class="year">2015</span></h2>
+                    <p>Dialogica is a suite of products for orchestrating the whole digital touchpoint creation process in an enterprise context. </p>
+                    <p>From a technical standpoint I consider this as my master piece. The application contains many engineering challenges like realtime collaborative editing and diagramming. Modern development techniques like functional reactive programming were used to create a responsive and collaborative experience.  It was built with AngularJS and a NodeJS backend.</p> 
+                    <p>On this project I worked as a front-end architect and lead developer.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="design">
+            <div class="section__inner">
+                <div class="section__content">
+                    <h2>UX/UI Design</h2>
+                    <p>My education Industrial Design Engineering gives me a good basis in the theory and practice of design processes. For me design starts with a thorough understanding of the domain and the users. With a solid understanding of the problem space on a conceptual level, design of the application structure and screens is a lot more straightforward.</p>
+                    <p>When it comes to detailed screen design, I have a strong eye for detail and knowlegde about the 'use qualities' that are important for a good user experience. My goal is always to create modular, component-driven design systems instead of separate screen designs.</p>
+                    <p>I have worked as a Interaction Designer for both large enterprises and small companies and have made designs for different kinds of platforms like web, Windows, embedded applications and early mobile (Vodafone Live!).</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="development">
+            <div class="section__inner">
+                <div class="section__content">
+                    <h2>Front-end development</h2>
+                    <p>In the past 15 years I have been developing all kinds of web sites and applications. Both simple web sites and complex web applications. I have worked on many different front-end engineering challenges like diagramming, realtime collaboration, WYSIWYG editing, complex drag and drop, PDF generation and many more.</p>
+                    <p>I have a strong focus on quality, both from a technical and design standpoint. Quality to me is not about how smart you are as a single programmer, but more about being thoughtfull and deliberate in your daily coding practice. Validation and communication of decisions within a team is very important to me. I take pride in creating well structured and thought-through codebases.</p>
+                    <p>My technical skill set includes:</p>
+                    <ul>
+                        <li>Expert level JavaScript, HTML and CSS skills (also ES2015 and TypeScript) </li>
+                        <li>Experience with multiple SPA frameworks (Angular 2, AngularJS, Knockout, React, Backbone)</li>
+                        <li>Understanding of different programming paradigms and patterns</li>
+                        <li>Knowledge of modern front-end development tooling</li>
+                        <li>Experience with unit testing and end-to-end testing</li>
+                    </ul>
+                    <p>For a more complete list of skill, see my <a href="resume.html#skills">resume</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section section--featured project--mixit">
+            <p class="section__type">Featured project</p>
+            <div class="section__inner">
+                <div class="section__images">
+                    <div class="section__image"><img src="assets/mixit.png" alt="" width="400"></div>
+                    <div class="section__image"><img src="assets/mixit-terminal-1.png" alt="" width="160"></div>
+                    <div class="section__image"><img src="assets/mixit-terminal-2.png" alt="" width="160"></div>
+                </div>
+                <div class="section__content">
+                    <h2>Akzo Mixit <span class="year">2005</span></h2>
+                    <p>Akzo Mixit is a Windows XP application for selection, mixing and administration of all the coats of paint that are put on a car during repair or respray.</p>
+                    <p>This project allowed me to design a new concept for supporting the paint processes in a car repair shop. Next to the Windows application it also consisted of accompanying scales with small monochrome LCD displays.</p>
+                    <p>I was responsible for concept design and detailed UI design.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="experience">
+            <div class="section__inner">
+                <div class="section__content">
+                    <h2>Professional experience</h2>
+                    <p>During my professional career I have done in-house client projects, on-site client projects and also R&D and product development in a more startup-like environment.</p>
+                    <p>While working at Informaat I have spent a lot of time at client locations. This allowed me to experience different kinds of organizational cultures. Some examples are ABN AMRO, Vodafone, Kluwer and Essent @Home.</p>
+                    <p>See my <a href="resume.html">resume</a> or <a href="projects.html">project list</a> for more.</p>
+                    
+                </div>
+            </div>
 
-		<ul class="contact-details">
-			<li class="contact__phone"><img src="svg/phone.svg" alt=""><a href="tel:+31624491395">+31 6 24491395</a></li>
-			<li class="contact__mail"><img src="svg/mail.svg" alt=""><a href="mailto:andre.haveman@gmail.com">andre.haveman@gmail.com</a></li>
-			<li class="contact__linkedin"><img src="svg/linkedin.svg" alt=""><a href="https://nl.linkedin.com/in/andrehaveman">LinkedIn</a></li>
-			<li class="contact__github"><img src="svg/github.svg" alt=""><a href="https://www.github.com/andrehaveman">GitHub</a></li>
-		</ul>
+        </section>
 
-	</section>
-
-	<section>
-		<h2>Summary</h2>
-		<ul class="summary-list">
-			<li>Specialized in design and development of complex web applications.</li>
-			<li>15+ years of experience in web industry</li>
-			<li>Experienced JavaScript (ES2015) developer.</li>
-			<li>Passionate about making enjoyable and usable products with high quality, well structured code.</li>
-			<li>Enjoy working in agile, multidisciplinary teams and acting as a bridge between design and development</li>
-			<li>Master Industrial Design Engineering, TU Delft</li>
-		</ul>
-	</section>
-
-	<section>
-		<h2>Education</h2>
-		<h3>Master Industrial Design Engineering</h3>
-		<p class="position__company">Delft University of Technology</p>
-		<p class="position__period">1992 - 1998</p>
-		<p class="position__location">Delft</p>
-	</section>
-
-	<section>
-		<h2>Professional experience</h2>
-
-		<section class="position">
-			<header>
-				<h3>Frontend Architect & Developer</h3>
-				<p>
-					<span class="position__company">Informaat CXP</span>
-					<span class="position__period">2010 - 2016</span>
-					<span class="position__location">Baarn</span>
-				</p>
-			</header>
-
-			<p>Frontend architecture and development of Dialogica, a cloud-based design & development environment for the insurance industry. Keywords: AngularJS, NodeJS, ES2015, RxJS, collaborative editing, diagramming, functional reactive programming.</p>
-		</section>
-
-		<section class="position">
-			<header>
-				<h3>Interaction Designer / Frontend engineer</h3>
-				<p>
-					<span class="position__company">Informaat Experience Design</span>
-					<span class="position__period">2001 - 2010</span>
-					<span class="position__location">Baarn / client locations</span>
-				</p>
-			</header>
-
-			<p>UX/UI design and frontend development for several large companies like ABN AMRO, Vodafone, Achmea, Belastingdienst, Kluwer, ASML.</p>
-			<p>Development of prototyping tools and component library used by other designers of Informaat.</p>
-		</section>
-
-		<section class="position">
-			<header>
-				<h3>Web developer / UI Designer</h3>
-				<p>
-					<span class="position__company">Media@Vantage</span>
-					<span class="position__period">1999 - 2001</span>
-					<span class="position__location">Amersfoort</span>
-				</p>
-			</header>
-			<p>Design and development of several websites and administrative applications. Some clients: Shimano, Dixons, Raad voor Cultuur, Kluwer, Brocacef.</p>
-		</section>
-
-		<section class="position">
-			<header>
-				<h3>UI Designer, technical writer and developer</h3>
-				<p>
-					<span class="position__company">Design for Sustainability Group, TU Delft</span>
-					<span class="position__period">1998 - 1999</span>
-					<span class="position__location">Delft</span>
-				</p>
-			</header>
-
-			<p>Design and development of website and online help for IdeMat, a software application for lifecycle and material analysis used by industrial designers.</p>
-		</section>
-
-	</section>
-
-	<section>
-		<h2>Skills</h2>
-		<section>
-			<h3>Development</h3>
-			<ul class="skill-list">
-				<li>
-					<span class="skill__header">Languages:</span>
-					<span class="keyword">JavaScript (ES2015)</span>
-					<span class="keyword">HTML5</span>
-					<span class="keyword">CSS3</span>
-				</li>
-				<li>
-					<span class="skill__header">SPA frameworks:</span>
-					<span class="keyword">Angular 2</span>
-					<span class="keyword">AngularJS</span>
-                    <span class="keyword">React</span>
-					<span class="keyword">KnockoutJS</span>
-					<span class="keyword">Backbone</span>
-				</li>
-				<li>
-					<span class="skill__header">Other frameworks/libraries:</span>
-					<span class="keyword">RxJS</span>
-					<span class="keyword">Socket.io</span>
-					<span class="keyword">jQuery</span>
-					<span class="keyword">Underscore/Lodash</span>
-					<span class="skill__more">and many more</span>
-				</li>
-				<li>
-					<span class="skill__header">Module bundlers:</span>
-					<span class="keyword">Webpack</span>
-					<span class="keyword">Browserify</span>
-					<span class="keyword">RequireJS</span>
-				</li>
-				<li>
-					<span class="skill__header">Testing:</span>
-					<span class="keyword">Karma</span>
-					<span class="keyword">Protractor</span>
-					<span class="keyword">Mocha</span>
-					<span class="keyword">Jasmine</span>
-					<span class="keyword">Sinon</span>
-					<span class="keyword">Chai</span>
-				</li>
-				<li>
-					<span class="skill__header">Backend:</span>
-					<span class="keyword">NodeJS</span>
-					<span class="keyword">Express</span>
-					<span class="keyword">MongoDB</span>
-				</li>
-				<li>
-					<span class="skill__header">CSS preprocessing:</span>
-					<span class="keyword">Less</span>
-					<span class="keyword">PostCSS</span>
-				</li>
-				<li>
-					<span class="skill__header">Version control:</span>
-					<span class="keyword">Git</span>
-					<span class="keyword">Mercurial</span>
-					<span class="keyword">SVN</span>
-				</li>
-				<li>
-					<span class="skill__header">Tooling:</span>
-					<span class="keyword">Grunt</span>
-					<span class="keyword">JSDoc</span>
-					<span class="keyword">Webstorm IDE</span>
-					<span class="keyword">Atom</span>
-					<span class="keyword">Chrome developer tools</span>
-				</li>
-				<li>
-					<span class="skill__header">Process:</span>
-					<span class="keyword">SCRUM</span>
-					<span class="keyword">TDD</span>
-					<span class="keyword">Continuous integration</span>
-					<span class="keyword">Code reviewing</span>
-				</li>
-			</ul>
-		</section>
-		<section>
-			<h3>Design</h3>
-			<p>
-				<span class="keyword">Concept design</span>
-				<span class="keyword">UX / UI design</span>
-				<span class="keyword">Information Architecture</span>
-				<span class="keyword">Wireframing</span>
-				<span class="keyword">Prototyping</span>
-				<span class="keyword">Design documentation</span>
-				<span class="keyword">Style guides</span>
-			</p>
-		</section>
-	</section>
-
-	<section>
-		<h2>Languages</h2>
-		<ul>
-			<li>Dutch (native proficiency)</li>
-			<li>English (Professional working proficiency)</li>
-		</ul>
-	</section>
-</body>
+        <section class="section--featured project--rvc">
+            <p class="section__type">Featured project</p>
+            <div class="section__inner">
+                <div class="section__images">
+                    <div class="section__image"><img src="assets/rvc1.png" alt="" width="400"></div>
+                    <div class="section__image"><img src="assets/rvc2.png" alt="" width="400"></div>
+                    <div class="section__image"><img src="assets/rvc3.png" alt="" width="400"></div>
+                </div>
+                <div class="section__content">
+                    <h2>Raad voor cultuur <span class="year">2000</span></h2>
+                    <p>This project started my love for JavaScript. The client wanted something that really stood out from the norm. The DHTML era had just started so we went full-blown with these new browser capabilities. The website makes heavy use of javascript animations (but in a subtle way). The Cultuurnota site already used asynchronous content loading in a time where AJAX wasn't invented yet.</p>
+                    <p>On this project I was responsible for all front-end development.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <ul class="contact-details">
+                <li class="contact__phone"><i class="icon icon-phone"></i><a href="tel:+31624491395">+31 6 24491395</a></li>
+                <li class="contact__email"><i class="icon icon-mail-alt"></i><a href="mailto:andre.haveman@gmail.com">andre.haveman@gmail.com</a></li>
+                <li class="contact__linkedin"><i class="icon icon-linkedin"></i><a href="https://nl.linkedin.com/in/andrehaveman">LinkedIn</a></li>
+                <li class="contact__github"><i class="icon icon-github"></i><a href="https://www.github.com/andrehaveman">GitHub</a></li>
+            </ul>
+        </footer>
+    </body>
 </html>
