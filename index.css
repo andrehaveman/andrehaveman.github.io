@@ -364,10 +364,9 @@ footer .contact-details li {
     margin: 2px .5em 0 0;
 }
 
-.contact__phone img {top: 5px;}
-.contact__mail img {top: 5px;}
-.contact__linkedin img {top: 2px;}
-.contact__github img {top: 5px;}
+.contact__website {
+    display: none;
+}
 
 th {
     text-align: left;
@@ -477,7 +476,7 @@ td:first-child {
     }
 
     @page {
-        margin: 20mm 15mm;
+        margin: 15mm 30mm;
     }
     
     h1, section, header, footer, div {
@@ -489,7 +488,7 @@ td:first-child {
     }
     
     body > section {
-        margin-bottom: 0.5cm !important;
+        margin-bottom: 0.8cm !important;
     }
     
     h2 {
@@ -521,10 +520,21 @@ td:first-child {
         padding: 0;
     }
 
+    .contact-details li .icon {
+        display: none;
+    }
+
     .contact__linkedin a:after {
         content: ': ' attr(href);
     }
     .contact__github a:after {
         content: ': ' attr(href);
+    }
+    .contact__website a:after {
+        content: ': ' attr(href);
+    }
+
+    .contact__website {
+        display: block;
     }
 }
